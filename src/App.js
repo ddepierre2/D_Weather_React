@@ -81,6 +81,7 @@ function App() {
           </div>
         </div>
       </section>
+      <p><a href="https://github.com/ddepierre2/D_Weather_React" target="_blank" rel="noreferrer" class="open-source-info">Open Source</a> code by Dana De Pierre</p>
     </div>
   );
 }
