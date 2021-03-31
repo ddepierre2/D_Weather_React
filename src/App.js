@@ -14,6 +14,7 @@ export default function App() {
     sunset: "19:10"
   };
    return ( <div className="App">
+     <div className="container"> 
       <h1 className="title">Weather of the Day</h1>
 
       <form className="location-form">
@@ -80,6 +81,7 @@ export default function App() {
         </div>
       </section>
       <footer><a href="https://github.com/ddepierre2/D_Weather_React" target="_blank" rel="noreferrer" class="open-source-info">Open Source</a> code by Dana De Pierre</footer>
+    </div>
     </div>
   );
 }
