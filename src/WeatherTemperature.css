@@ -1,0 +1,12 @@
+.WeatherTemperature a {
+  cursor: default;
+  text-decoration: none;
+}
+.WeatherTemperature a:hover {
+  color: #f2f2f1;
+  cursor: default;
+  text-decoration: none;
+}
+.WeatherTemperature .now-temp {
+  font-size: 64px;
+}
