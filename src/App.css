@@ -13,3 +13,10 @@
 .App footer {
   font-size: 11px;
 }
+.App a {
+  color: #321970;
+  transition: 200ms;
+}
+.App a:hover {
+  transition: 200ms;
+}
