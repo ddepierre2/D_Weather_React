@@ -15,14 +15,14 @@ setUnit("metric");
 if (unit === "metric"){
   return(
   <span className="celsiusDegree">
-    <strong>{props.celsius}</strong>
+    <strong className="nowTemp">{props.celsius}</strong>
     °C | <a href="/" onClick={fahrenheitConvert}>°F</a></span>
   );
 } else {
   let fahrenheit = Math.round((props.celsius * 9/5) + 32);
  return(
   <span className="fahrenheitDegree">
-    <strong>{fahrenheit}</strong>
+    <strong className="nowTemp">{fahrenheit}</strong>
     <a href="/" onClick={celsiusConvert}>°C</a> | °F </span>
   );
 

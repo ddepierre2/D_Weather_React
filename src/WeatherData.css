@@ -1,3 +1,6 @@
 .WeatherData {
   background-color: transparent;
 }
+.nowTemp {
+  font-size: 60px;
+}
