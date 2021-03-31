@@ -1,6 +1,6 @@
 import React from "react";
 import CurrentDate from "./CurrentDate";
-
+import WeatherIcon from "./WeatherIcon";
 
 
 export default function WeatherData (props){
@@ -23,7 +23,7 @@ return (
               <h3>Temperature</h3>
               <div className="row">
                 <div className="card-body col-3 float-left">
-                  <img src={props.data.image} alt={props.data.description} />
+                  <WeatherIcon code={props.data.icon} />
                 </div>
 
                 <div className="card-body col-4 float-left">
