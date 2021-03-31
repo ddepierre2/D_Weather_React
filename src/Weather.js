@@ -20,7 +20,7 @@ export default function Weather() {
    
   <div className="Weather">
         <form className="location-form">
-        <input type="search" placeholder="Enter your city" autocomplete="off" />
+        <input type="search" placeholder="Enter your city" autoComplete="off" />
         <input type="submit" class="search-button" value="Search" />
         <button className="current-location-button">Current Location</button>
       </form>
@@ -45,12 +45,12 @@ export default function Weather() {
                   <img src={Weather.image} alt={Weather.description} />
                 </div>
 
-                <div className="card-body col-3">
+                <div className="card-body col-4">
                   <strong className="now-temp">{Weather.temperature}</strong>
                   <a href="/">°C</a> | <a href="/">°F</a>
                 </div>
 
-                <div className="card-body col-3 float-left">
+                <div className="card-body float-left">
                   <ul className="temperature-description-box">
                     <li className="card-text">{Weather.description}</li>
                     <li className="card-text">Humidity: {Weather.humidity}%</li>
