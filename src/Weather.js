@@ -41,11 +41,11 @@ export default function Weather() {
             <div className="card col-6 transparency">
               <h3>Temperature</h3>
               <div className="row">
-                <div className="card-body col-2 float-left">
+                <div className="card-body col-3 float-left">
                   <img src={Weather.image} alt={Weather.description} />
                 </div>
 
-                <div className="card-body col-4">
+                <div className="card-body col-4 float-left">
                   <strong className="now-temp">{Weather.temperature}</strong>
                   <a href="/">°C</a> | <a href="/">°F</a>
                 </div>
