@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import CurrentDate from "./CurrentDate";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -9,8 +10,7 @@ function axiosCall (response) {
   setWeatherInfo({
     ready: true,
     city: response.data.name,
-    date: "Thursday, March 5, 2021",
-    time: "15:32",
+    date: new Date(response.data.dt * 1000),
     temperature: Math.round(response.data.main.temp),
     image: `http://openweathermap.org/img/wn/10n@2x.png`,
     description: response.data.weather[0].description,
@@ -39,8 +39,7 @@ function axiosCall (response) {
             <div className="card col-3 transparency">
               <h3> Date and Time</h3>
               <div className="card-body">
-                <p className="card-text">{weatherInfo.date}</p>
-                <p className="card-text">{weatherInfo.time}</p>
+                <p className="card-text"><CurrentDate date={weatherInfo.date} /></p>
               </div>
             </div>
 
