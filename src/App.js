@@ -1,6 +1,6 @@
 import './App.css';
 
-function App() {
+export default function App() {
   let Weather = {
     city: "Montreal",
     date: "Thursday, March 5, 2021",
@@ -84,4 +84,3 @@ function App() {
   );
 }
 
-export default App;
