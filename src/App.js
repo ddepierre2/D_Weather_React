@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  <img src={logo} className="App-logo" alt="logo" />
   let Weather = {
     city: "Montreal",
     date: "Thursday, March 5, 2021",
