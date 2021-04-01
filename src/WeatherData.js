@@ -8,7 +8,6 @@ import "./WeatherData.css"
 export default function WeatherData (props){
 return (
   <div className="WeatherData">
-
       <section className="current-location">
         <div className="container transparency">
           <h2 className="searched-city">{props.data.city}</h2>
@@ -25,7 +24,7 @@ return (
               <h3>Temperature</h3>
               <div className="row">
                   <div className="card-body col-3 float-left">
-                    <WeatherIcon code={props.data.icon} />
+                    <WeatherIcon code={props.data.icon} size={60} />
                   </div>
 
                 <div className="card-body float-left">

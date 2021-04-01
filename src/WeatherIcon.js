@@ -36,7 +36,7 @@ if (props.code === "01d"){
  <ReactAnimatedWeather
     icon={codeMapping[props.code]}
     color="#321970"
-    size={70}
+    size={props.size}
     animate={true}
   />
   );
