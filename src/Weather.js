@@ -13,6 +13,7 @@ function axiosCall (response) {
   setWeatherInfo({
     ready: true,
     city: response.data.name,
+    coordinates: response.data.coord,
     date: new Date(response.data.dt * 1000),
     temperature: Math.round(response.data.main.temp),
     icon: response.data.weather[0].icon,
@@ -47,7 +48,7 @@ setCity(event.target.value);
       </form>
 
     <WeatherData data={weatherInfo} />
-    <Forecast />
+    <Forecast coordinates={weatherInfo.coordinates} />
     </div>
   );
    } else{
