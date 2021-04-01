@@ -8,27 +8,23 @@ import "./WeatherData.css"
 export default function WeatherData (props){
 return (
   <div className="WeatherData">
-      <section className="current-location">
-        <div className="container transparency">
-          <h2 className="searched-city">{props.data.city}</h2>
-
-          <div className="row">
-            <div className="card col-4 transparency">
-              <h3> Date and Time</h3>
-              <div className="card-body">
-                <p className="card-text"><CurrentDate date={props.data.date} /></p>
-              </div>
+    <h2 className="searched-city">{props.data.city}</h2>
+        <div className="row">
+          <div className="card col-4 transparency">
+            <h3> Date and Time</h3>
+            <div className="card-body">
+              <span className="card-text"><CurrentDate date={props.data.date} /></span>
             </div>
+          </div>
 
-            <div className="card col-8 transparency">
-              <h3>Temperature</h3>
+          <div className="card col-8 transparency">
+            <h3>Temperature</h3>
               <div className="row">
-                  <div className="card-body col-3 float-left">
-                    <WeatherIcon code={props.data.icon} size={60} />
-                  </div>
-
+                <div className="card-body col-3 float-left">
+                  <WeatherIcon code={props.data.icon} size={60} />
+                </div>
                 <div className="card-body float-left">
-                <WeatherTemperature celsius={props.data.temperature} />
+                  <WeatherTemperature celsius={props.data.temperature} />
                 </div>
 
                 <div className="card-body float-left">
@@ -39,11 +35,8 @@ return (
                   </ul>
                 </div>
               </div>
-            </div>
           </div>
-        </div>
-      </section>
-  
-    </div>
+        </div> 
+  </div>
 )
 }

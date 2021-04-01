@@ -40,14 +40,14 @@ setCity(event.target.value);
 
   if (weatherInfo.ready){
    return ( 
-     <div className="Weather">
+    <div className="Weather">
         <form className="location-form" onSubmit={searchCity}>
-        <input type="search" placeholder="Enter your city" autoComplete="off" onChange={handleSearchCity}/>
-        <input type="submit" className="search-button" value="Search" />
-      </form>
+          <input type="search" placeholder="Enter your city" autoComplete="off" onChange={handleSearchCity}/>
+           <input type="submit" className="search-button" value="Search" />
+        </form>
 
-    <WeatherData data={weatherInfo} />
-    <Forecast coordinates={weatherInfo.coordinates} />
+        <WeatherData data={weatherInfo} />
+        <Forecast coordinates={weatherInfo.coordinates} />
     </div>
   );
    } else{

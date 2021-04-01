@@ -30,17 +30,19 @@ export default function Forecast (props){
     return (
       <div className="Forecast">
         <div className="row">
-          {forecastData.map(function(dailyForecast, index) {
-            if(index < 5){
-              return(
-                <div className="col" key={index}>
-                  <ForecastDay data={dailyForecast} />
-                </div>
-              );
-          } else {
-            return null;
-          }
-          })}
+                {forecastData.map(function(dailyForecast, index) {
+                  if(index < 5){
+                    return(
+                      <div className="col forecastCards" key={index}>
+                        <div className="card transparency">
+                           <ForecastDay data={dailyForecast} />
+                        </div>
+                      </div>
+                    );
+                } else {
+                  return null;
+                }
+                })}
         </div>
       </div>
     );
