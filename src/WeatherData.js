@@ -28,7 +28,7 @@ return (
                     <WeatherIcon code={props.data.icon} />
                   </div>
 
-                <div className="card-body float-left degree">
+                <div className="card-body float-left">
                 <WeatherTemperature celsius={props.data.temperature} />
                 </div>
 
