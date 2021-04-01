@@ -9,7 +9,6 @@ export default function Weather(props) {
   const [city, setCity] = useState (props.defaultCity);
 
 function axiosCall (response) {
-  console.log(response.data)
   setWeatherInfo({
     ready: true,
     city: response.data.name,

@@ -13,7 +13,6 @@ setLoaded(false);
 }, [props.coordinates]);
 
   function showForecast(response){
-    console.log(response.data);
     setForecastData(response.data.daily);
     setLoaded(true);
   }
@@ -28,6 +27,8 @@ setLoaded(false);
                   <ForecastDay data={dailyForecast} />
                 </div>
               );
+          } else {
+            return null;
           }
           })}
         </div>
